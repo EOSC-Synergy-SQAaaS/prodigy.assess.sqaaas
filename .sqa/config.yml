@@ -5,7 +5,7 @@ config:
       branch: release/1.7.8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/haddocking/prodigy:
-      branch: main
+      branch: setup
       repo: https://github.com/haddocking/prodigy
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-thistle-termite.sh
-        container: qc.acc_skanky-carmine-chimpanzee
+        - /usr/bin/env sh .sqa/script.woolly-eggplant-labradoodle.sh
+        container: qc.acc_baggy-gold-maltese
   QC.Doc:
     repos:
       github.com/haddocking/prodigy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-beige-devil.sh
-        container: qc.doc_boozy-violet-cassowary
+        - /usr/bin/env sh .sqa/script.bumpy-lilac-meerkat.sh
+        container: qc.doc_woozy-brass-ant
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-salmon-budgerigar.sh
-        container: qc.doc_paltry-viridian-bracke
+        - /usr/bin/env sh .sqa/script.trippy-ivory-newfoundland.sh
+        container: qc.doc_flimsy-salmon-dachsbracke
       github.com/haddocking/prodigy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-olive-wombat.sh
-        container: qc.doc_silly-cerise-rattlesnake
+        - /usr/bin/env sh .sqa/script.chewy-lilac-newt.sh
+        container: qc.doc_pretty-pumpkin-tetra
   QC.Lic:
     repos:
       github.com/haddocking/prodigy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-ivory-gecko.sh
-        container: qc.lic_pokey-cyan-okapi
+        - /usr/bin/env sh .sqa/script.boozy-tomato-seal.sh
+        container: qc.lic_trippy-red-kudu
   QC.Sec:
     repos:
       github.com/haddocking/prodigy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-sepia-peccary.sh
-        container: qc.sec_wheezy-carmine-hummingbird
+        - /usr/bin/env sh .sqa/script.thirsty-pear-capuchin.sh
+        container: qc.sec_gimpy-periwinkle-magpie
   QC.Sty:
     repos:
       github.com/haddocking/prodigy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-magnolia-tamarin.sh
-        container: qc.sty_trippy-lime-mayfly
+        - /usr/bin/env sh .sqa/script.bumpy-cerise-dogfish.sh
+        container: qc.sty_lousy-xanthic-lobster
       github.com/haddocking/prodigy jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-amaranth-spaniel.sh
-        container: qc.sty_jumpy-cardinal-tarsier
+        - /usr/bin/env sh .sqa/script.foggy-amaranth-shrimp.sh
+        container: qc.sty_flaky-firebrick-cockroach
   QC.Ver:
     repos:
       github.com/haddocking/prodigy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-emerald-capuchin.sh
-        container: qc.ver_ugly-saffron-ragdoll
+        - /usr/bin/env sh .sqa/script.geeky-aqua-bulldog.sh
+        container: qc.ver_chewy-fuchsia-albatross
 timeout: 5400
