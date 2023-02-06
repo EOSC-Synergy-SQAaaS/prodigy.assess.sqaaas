@@ -15,48 +15,54 @@ sqa_criteria:
     repos:
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-eggplant-labradoodle.sh
-        container: qc.acc_baggy-gold-maltese
+        - /usr/bin/env sh .sqa/script.slaphappy-eggplant-crocodile.sh
+        container: qc.acc_pokey-salmon-akbash
   QC.Doc:
     repos:
       github.com/haddocking/prodigy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-lilac-meerkat.sh
-        container: qc.doc_woozy-brass-ant
+        - /usr/bin/env sh .sqa/script.crappy-maroon-ostrich.sh
+        container: qc.doc_ready-scarlet-chinook
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-ivory-newfoundland.sh
-        container: qc.doc_flimsy-salmon-dachsbracke
+        - /usr/bin/env sh .sqa/script.sunny-platinum-liger.sh
+        container: qc.doc_wiggy-azure-fowl
       github.com/haddocking/prodigy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-lilac-newt.sh
-        container: qc.doc_pretty-pumpkin-tetra
+        - /usr/bin/env sh .sqa/script.freaky-bistre-llama.sh
+        container: qc.doc_homely-chocolate-lemur
   QC.Lic:
     repos:
       github.com/haddocking/prodigy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-tomato-seal.sh
-        container: qc.lic_trippy-red-kudu
+        - /usr/bin/env sh .sqa/script.cozy-corn-lynx.sh
+        container: qc.lic_surly-amaranth-ladybird
+  QC.Met:
+    repos:
+      github.com/haddocking/prodigy cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.bluesy-ivory-stingray.sh
+        container: qc.met_skanky-yellow-sparrow
   QC.Sec:
     repos:
       github.com/haddocking/prodigy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-pear-capuchin.sh
-        container: qc.sec_gimpy-periwinkle-magpie
+        - /usr/bin/env sh .sqa/script.cranky-puce-wasp.sh
+        container: qc.sec_queasy-russet-spitz
   QC.Sty:
     repos:
       github.com/haddocking/prodigy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-cerise-dogfish.sh
-        container: qc.sty_lousy-xanthic-lobster
+        - /usr/bin/env sh .sqa/script.queasy-burgundy-havanese.sh
+        container: qc.sty_squirrely-flax-lobster
       github.com/haddocking/prodigy jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-amaranth-shrimp.sh
-        container: qc.sty_flaky-firebrick-cockroach
+        - /usr/bin/env sh .sqa/script.wheezy-olive-spitz.sh
+        container: qc.sty_skinny-periwinkle-dormouse
   QC.Ver:
     repos:
       github.com/haddocking/prodigy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-aqua-bulldog.sh
-        container: qc.ver_chewy-fuchsia-albatross
+        - /usr/bin/env sh .sqa/script.geeky-xanthic-heron.sh
+        container: qc.ver_stuffy-mauve-worm
 timeout: 5400
