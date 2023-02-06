@@ -5,7 +5,7 @@ config:
       branch: release/1.7.8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/haddocking/prodigy:
-      branch: setup
+      branch: main
       repo: https://github.com/haddocking/prodigy
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-brown-eel.sh
-        container: qc.acc_stinky-plum-okapi
+        - /usr/bin/env sh .sqa/script.tacky-charcoal-oyster.sh
+        container: qc.acc_whiny-tangerine-drever
   QC.Doc:
     repos:
       github.com/haddocking/prodigy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-brown-ragdoll.sh
-        container: qc.doc_leaky-pumpkin-cuttlefish
+        - /usr/bin/env sh .sqa/script.scummy-purple-otter.sh
+        container: qc.doc_gloppy-gamboge-kiwi
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-cerulean-goose.sh
-        container: qc.doc_stuffy-apricot-elephant
+        - /usr/bin/env sh .sqa/script.bumpy-fuchsia-sparrow.sh
+        container: qc.doc_tasty-amaranth-flounder
       github.com/haddocking/prodigy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-celadon-penguin.sh
-        container: qc.doc_seedy-crimson-dachshund
+        - /usr/bin/env sh .sqa/script.nerdy-charcoal-akbash.sh
+        container: qc.doc_bluesy-taupe-guppy
   QC.Lic:
     repos:
       github.com/haddocking/prodigy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-cornflower-dunker.sh
-        container: qc.lic_pasty-plum-cichlid
+        - /usr/bin/env sh .sqa/script.boozy-magnolia-gorilla.sh
+        container: qc.lic_woolly-ultramarine-sponge
   QC.Met:
     repos:
       github.com/haddocking/prodigy cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-russet-hummingbird.sh
-        container: qc.met_pasty-rust-octopus
+        - /usr/bin/env sh .sqa/script.flimsy-seashell-setter.sh
+        container: qc.met_droopy-ochre-weasel
   QC.Sec:
     repos:
       github.com/haddocking/prodigy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-brown-camel.sh
-        container: qc.sec_shabby-cinnamon-wolverine
+        - /usr/bin/env sh .sqa/script.lanky-brass-goose.sh
+        container: qc.sec_woolly-rose-mole
   QC.Sty:
     repos:
       github.com/haddocking/prodigy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-tan-kangaroo.sh
-        container: qc.sty_baggy-ivory-fish
+        - /usr/bin/env sh .sqa/script.pretty-zucchini-saola.sh
+        container: qc.sty_fuzzy-zucchini-macaque
       github.com/haddocking/prodigy jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-persimmon-donkey.sh
-        container: qc.sty_gummy-cinnabar-mongrel
+        - /usr/bin/env sh .sqa/script.gummy-persimmon-kakapo.sh
+        container: qc.sty_crabby-coral-oyster
   QC.Ver:
     repos:
       github.com/haddocking/prodigy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cyan-dogfish.sh
-        container: qc.ver_lousy-fuchsia-ladybird
+        - /usr/bin/env sh .sqa/script.crappy-purple-starfish.sh
+        container: qc.ver_shaggy-denim-akbash
 timeout: 5400
