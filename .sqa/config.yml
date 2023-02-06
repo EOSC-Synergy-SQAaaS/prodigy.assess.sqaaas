@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-tan-ray.sh
-        container: qc.acc_ugly-chartreuse-emu
+        - /usr/bin/env sh .sqa/script.blurry-emerald-macaque.sh
+        container: qc.acc_gloppy-persimmon-antelope
   QC.Doc:
     repos:
       github.com/haddocking/prodigy find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-plum-slug.sh
-        container: qc.doc_boozy-rose-fowl
+        - /usr/bin/env sh .sqa/script.ready-smalt-panda.sh
+        container: qc.doc_chewy-amber-starfish
       github.com/haddocking/prodigy git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-thistle-molly.sh
-        container: qc.doc_gloppy-crimson-bobcat
+        - /usr/bin/env sh .sqa/script.pasty-wisteria-echidna.sh
+        container: qc.doc_nippy-flax-ant
       github.com/haddocking/prodigy markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-asparagus-terrier.sh
-        container: qc.doc_foggy-amaranth-budgerigar
+        - /usr/bin/env sh .sqa/script.gummy-charcoal-hare.sh
+        container: qc.doc_snippy-xanthic-capuchin
   QC.Lic:
     repos:
       github.com/haddocking/prodigy licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-purple-tarsier.sh
-        container: qc.lic_wheezy-sepia-molly
+        - /usr/bin/env sh .sqa/script.leaky-tan-woodpecker.sh
+        container: qc.lic_wimpy-chartreuse-grouse
   QC.Met:
     repos:
       github.com/haddocking/prodigy cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-burgundy-pig.sh
-        container: qc.met_beady-malachite-earwig
+        - /usr/bin/env sh .sqa/script.snazzy-russet-havanese.sh
+        container: qc.met_snoopy-cardinal-mastiff
   QC.Sec:
     repos:
       github.com/haddocking/prodigy bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-emerald-lizard.sh
-        container: qc.sec_ugly-firebrick-tzu
+        - /usr/bin/env sh .sqa/script.snazzy-pumpkin-fish.sh
+        container: qc.sec_gloppy-ultramarine-vulture
   QC.Sty:
     repos:
       github.com/haddocking/prodigy flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-teal-opossum.sh
-        container: qc.sty_nippy-rose-beetle
+        - /usr/bin/env sh .sqa/script.hasty-ivory-lynx.sh
+        container: qc.sty_gimpy-goldenrod-tarantula
       github.com/haddocking/prodigy jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-red-grasshopper.sh
-        container: qc.sty_squirrely-myrtle-markhor
+        - /usr/bin/env sh .sqa/script.cheeky-ecru-barb.sh
+        container: qc.sty_nippy-alizarin-hamster
   QC.Ver:
     repos:
       github.com/haddocking/prodigy get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-carmine-tarantula.sh
-        container: qc.ver_gamy-taupe-dragonfly
+        - /usr/bin/env sh .sqa/script.nerdy-sangria-bandicoot.sh
+        container: qc.ver_chummy-silver-elephant
 timeout: 5400
